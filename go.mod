@@ -6,7 +6,7 @@ require (
 	github.com/alibabacloud-go/captcha-20230305 v1.1.2
 	github.com/alibabacloud-go/darabonba-openapi/v2 v2.1.7
 	github.com/alibabacloud-go/tea v1.3.9
-	github.com/aliyun/alibabacloud-oss-go-sdk-v2 v1.2.3
+	github.com/aliyun/aliyun-oss-go-sdk v3.0.2+incompatible
 	github.com/bytedance/gopkg v0.1.3
 	github.com/dgraph-io/ristretto v0.2.0
 	github.com/futurxlab/golanggraph v0.0.9
