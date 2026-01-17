@@ -6,7 +6,7 @@ const (
 )
 
 type BaseResponse struct {
-	Status string       `json:"status" swaggertype:"string"`
-	Error  *FuturxError `json:"error"`
-	Data   interface{}  `json:"data" swaggertype:"object"`
+	Status string      `json:"status" swaggertype:"string"`
+	Error  *Error      `json:"error"`
+	Data   interface{} `json:"data" swaggertype:"object"`
 }

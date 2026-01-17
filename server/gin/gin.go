@@ -8,8 +8,6 @@ import (
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
-	"go.uber.org/zap"
-	"go.uber.org/zap/zapcore"
 )
 
 var (
@@ -31,17 +29,15 @@ var (
 			end := time.Now()
 			latency := end.Sub(start)
 
-			fields := []zapcore.Field{
-				zap.Int("status", c.Writer.Status()),
-				zap.String("path", path),
-				zap.String("method", c.Request.Method),
-				zap.String("ip", c.ClientIP()),
-				zap.String("useragent", c.Request.UserAgent()),
-				zap.Duration("latency", latency),
-				zap.String("trace_id", traceID),
-			}
-
-			logger.Infof(c, "Gin Request Log %+v", fields)
+			logger.Infof(c, "Gin Request Log status: %d, path: %s, method: %s, ip: %s, useragent: %s, latency: %s, trace_id: %s",
+				c.Writer.Status(),
+				path,
+				c.Request.Method,
+				c.ClientIP(),
+				c.Request.UserAgent(),
+				latency,
+				traceID,
+			)
 		}
 	}
 	metricsEndpoint string
@@ -71,7 +67,7 @@ func WithLogger(logger logger.ILogger) Option {
 	}
 }
 
-func NewFuturxGin(options ...Option) (*gin.Engine, error) {
+func NewGin(options ...Option) (*gin.Engine, error) {
 	engine := gin.New()
 	for _, option := range options {
 		if err := option(engine); err != nil {

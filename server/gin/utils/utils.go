@@ -10,7 +10,7 @@ import (
 	"go.uber.org/zap"
 )
 
-func ResponseWebSocketError(c *gin.Context, err *facade.FuturxError) {
+func ResponseWebSocketError(c *gin.Context, err *facade.Error) {
 	path := c.Request.URL.Path
 	futurxLogger, ok := c.Get("logger")
 	if ok {
@@ -26,7 +26,7 @@ func ResponseWebSocketError(c *gin.Context, err *facade.FuturxError) {
 	}
 }
 
-func ResponseError(c *gin.Context, err *facade.FuturxError) {
+func ResponseError(c *gin.Context, err *facade.Error) {
 	response := &facade.BaseResponse{}
 	path := c.Request.URL.Path
 	futurxLogger, ok := c.Get("logger")
