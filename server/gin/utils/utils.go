@@ -1,28 +1,18 @@
 package utils
 
 import (
-	"fmt"
 	"strconv"
 
 	"github.com/Yet-Another-AI-Project/kiwi-lib/server/facade"
 	"github.com/futurxlab/golanggraph/logger"
 	"github.com/gin-gonic/gin"
-	"go.uber.org/zap"
 )
 
 func ResponseWebSocketError(c *gin.Context, err *facade.Error) {
 	path := c.Request.URL.Path
 	futurxLogger, ok := c.Get("logger")
 	if ok {
-		fields := []zap.Field{
-			zap.String("path", path),
-			zap.String("facade_message", err.FacadeMessage),
-		}
-		if err.InternalError != nil {
-			fields = append(fields, zap.String("internal_error", fmt.Sprintf("%+v\n\n", err.InternalError)))
-		}
-
-		futurxLogger.(logger.ILogger).Errorf(c, "Gin Request Failed %+v", fields)
+		futurxLogger.(logger.ILogger).Errorf(c, "Gin Request Failed, path: %s, facade_message: %s, internal_error: %v", path, err.FacadeMessage, err.InternalError)
 	}
 }
 
@@ -31,15 +21,7 @@ func ResponseError(c *gin.Context, err *facade.Error) {
 	path := c.Request.URL.Path
 	futurxLogger, ok := c.Get("logger")
 	if ok {
-		fields := []zap.Field{
-			zap.String("path", path),
-			zap.String("facade_message", err.FacadeMessage),
-		}
-		if err.InternalError != nil {
-			fields = append(fields, zap.String("internal_error", fmt.Sprintf("%+v\n\n", err.InternalError)))
-		}
-
-		futurxLogger.(logger.ILogger).Errorf(c, "Gin Request Failed %+v", fields)
+		futurxLogger.(logger.ILogger).Errorf(c, "Gin Request Failed, path: %s, facade_message: %s, internal_error: %v", path, err.FacadeMessage, err.InternalError)
 	}
 	response.Status = "error"
 	response.Error = err

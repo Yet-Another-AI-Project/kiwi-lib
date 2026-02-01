@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/Yet-Another-AI-Project/kiwi-lib/tools/otelutils"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 	"gopkg.in/natefinch/lumberjack.v2"
-	"github.com/Yet-Another-AI-Project/kiwi-lib/tools/otelutils"
 )
 
 type ContextKey string
