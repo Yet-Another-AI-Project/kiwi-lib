@@ -13,9 +13,6 @@ import (
 
 type ContextKey string
 
-const HostIDKey ContextKey = "host_id"
-const TaskIDKey ContextKey = "task_id"
-
 type Logger struct {
 	level         string
 	format        string
