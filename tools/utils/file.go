@@ -9,7 +9,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/futurxlab/golanggraph/xerror"
+	"github.com/Yet-Another-AI-Project/kiwi-lib/xerror"
 	"github.com/skip2/go-qrcode"
 )
 

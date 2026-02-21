@@ -7,7 +7,7 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/futurxlab/golanggraph/xerror"
+	"github.com/Yet-Another-AI-Project/kiwi-lib/xerror"
 	"github.com/google/uuid"
 	"github.com/gorilla/websocket"
 )

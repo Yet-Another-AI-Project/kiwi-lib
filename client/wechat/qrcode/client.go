@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/futurxlab/golanggraph/logger"
-	"github.com/futurxlab/golanggraph/xerror"
+	"github.com/Yet-Another-AI-Project/kiwi-lib/logger"
+	"github.com/Yet-Another-AI-Project/kiwi-lib/xerror"
 )
 
 // 定义 API 接口 URL

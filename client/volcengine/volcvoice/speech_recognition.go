@@ -11,7 +11,7 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/futurxlab/golanggraph/logger"
+	"github.com/Yet-Another-AI-Project/kiwi-lib/logger"
 	"github.com/google/uuid"
 	"github.com/gorilla/websocket"
 )

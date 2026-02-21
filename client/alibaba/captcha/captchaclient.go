@@ -5,10 +5,10 @@ import (
 	"errors"
 	"fmt"
 
+	"github.com/Yet-Another-AI-Project/kiwi-lib/xerror"
 	captcha20230305 "github.com/alibabacloud-go/captcha-20230305/client"
 	openapi "github.com/alibabacloud-go/darabonba-openapi/v2/client"
 	"github.com/alibabacloud-go/tea/tea"
-	"github.com/futurxlab/golanggraph/xerror"
 )
 
 // CaptchaClient 验证码服务接口

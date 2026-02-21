@@ -8,7 +8,7 @@ import (
 	"strings"
 
 	libutils "github.com/Yet-Another-AI-Project/kiwi-lib/tools/utils"
-	"github.com/futurxlab/golanggraph/xerror"
+	"github.com/Yet-Another-AI-Project/kiwi-lib/xerror"
 	"github.com/google/uuid"
 )
 

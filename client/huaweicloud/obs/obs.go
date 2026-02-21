@@ -3,7 +3,7 @@ package obs
 import (
 	"io"
 
-	"github.com/futurxlab/golanggraph/xerror"
+	"github.com/Yet-Another-AI-Project/kiwi-lib/xerror"
 	"github.com/huaweicloud/huaweicloud-sdk-go-obs/obs"
 )
 

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/futurxlab/golanggraph/logger"
+	"github.com/Yet-Another-AI-Project/kiwi-lib/logger"
 )
 
 type VoiceService struct {

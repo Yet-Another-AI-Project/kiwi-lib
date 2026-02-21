@@ -9,7 +9,7 @@ import (
 	"net/url"
 
 	"github.com/Yet-Another-AI-Project/kiwi-lib/client/huaweicloud/core"
-	"github.com/futurxlab/golanggraph/xerror"
+	"github.com/Yet-Another-AI-Project/kiwi-lib/xerror"
 )
 
 type SendSMSResponse struct {

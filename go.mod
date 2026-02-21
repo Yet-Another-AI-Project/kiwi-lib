@@ -9,7 +9,6 @@ require (
 	github.com/aliyun/aliyun-oss-go-sdk v3.0.2+incompatible
 	github.com/bytedance/gopkg v0.1.3
 	github.com/dgraph-io/ristretto v0.2.0
-	github.com/futurxlab/golanggraph v0.0.9
 	github.com/gin-contrib/cors v1.7.6
 	github.com/gin-gonic/gin v1.10.1
 	github.com/golang/glog v1.2.3
@@ -29,7 +28,6 @@ require (
 	go.opentelemetry.io/otel/sdk/metric v1.36.0
 	go.opentelemetry.io/otel/trace v1.36.0
 	go.uber.org/zap v1.27.0
-	gopkg.in/natefinch/lumberjack.v2 v2.0.0
 )
 
 require (

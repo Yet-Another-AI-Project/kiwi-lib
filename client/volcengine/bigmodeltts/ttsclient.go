@@ -11,8 +11,8 @@ import (
 	"github.com/bytedance/gopkg/lang/fastrand"
 	"github.com/gorilla/websocket"
 
-	"github.com/futurxlab/golanggraph/logger"
-	"github.com/futurxlab/golanggraph/xerror"
+	"github.com/Yet-Another-AI-Project/kiwi-lib/logger"
+	"github.com/Yet-Another-AI-Project/kiwi-lib/xerror"
 	"github.com/google/uuid"
 )
 

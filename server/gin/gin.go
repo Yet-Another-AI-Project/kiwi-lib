@@ -3,8 +3,8 @@ package futurxgin
 import (
 	"time"
 
+	"github.com/Yet-Another-AI-Project/kiwi-lib/logger"
 	"github.com/Yet-Another-AI-Project/kiwi-lib/server/gin/middleware"
-	"github.com/futurxlab/golanggraph/logger"
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
